@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Progress Page</title>
+    </head>
+    <body>
+        <div class="progress-container">
+            <div class="logo">
+                <p class="brand">MINK'D /PIERCED<span class="second">by Ann</span></p>
+              </div>
+            <p class="phrase">ANYTHING IS POSSIBLE....</p>
+            <div class="progress-bar">
+                <div class="progress-bar-fill"></div>
+            </div>
+        </div>
+    
+        <script>
+            // Function to simulate loading progress
+            function loadProgress() {
+                const progressBarFill = document.querySelector('.progress-bar-fill');
+                progressBarFill.style.width = '100%';
+            }
+    
+            // Call the loadProgress function when the page loads
+            window.onload = loadProgress;
+    
+            // Redirect to home page after 3 seconds
+            setTimeout(() => {
+                window.location.href = "home.html"; // Change "home.html" to your actual home page URL
+            }, 3000);
+        </script>
+    </body>
+</html>
