@@ -1,0 +1,42 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(194, 183, 205);
+    font-family:"Edu AU VIC WA NT Hand", cursive;
+}
+.logo{
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.brand{
+    font-family:"Bona Nova SC", serif;
+    cursor: pointer;
+}
+.second{
+    font-family:"Playwrite CU", cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+.progress-container {
+    text-align: center;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.progress-bar-fill {
+    height: 30px;
+    width: 0;
+    background-color: rgb(152, 125, 176);;
+    border-radius: 25px;
+    transition: width 3s ease-in-out;
+}
