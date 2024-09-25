@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:default
+}
+html{
+    display: block;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+#page-wrapper{
+    position: flex;
+}
+.logo{
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.brand{
+    font-family:"Bona Nova SC", serif;
+    cursor: pointer;
+}
+.second{
+    font-family:"Playwrite CU", cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+.motto {
+    font-family:"Edu AU VIC WA NT Hand", cursive;
+    text-align: center;
+    background-color: rgb(152, 125, 176);
+    cursor: pointer;
+    color: white;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 1em;
+}
+.nav-item{
+    padding: 12px;
+    cursor: pointer;
+}
+.nav-item:hover{
+  background-color:  rgb(245, 168, 212);
+  border-radius: 5px;
+  transition: color 1s ease;
+  color: white;
+}
+.nav-links li{
+    margin-left: 20px;
+}
+#header {
+    position: flex;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+body{
+    background-color: rgb(220, 168, 205);
+    min-height: 100vh;
+}
+html, body {
+    height: 100%;
+}
+.price-list{
+    width:80%;
+    margin-right: auto;
+    margin-left: auto; 
+    padding: 20px;
+    background-color: rgb(240, 234, 238);
+    color: black;
+    text-align:center;
+    padding-bottom: 50px;
+    display: relative;
+    margin-top: 50px;
+ }
+ .item p{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.name{
+    text-align: left;
+    width: 50%;
+    cursor: pointer;
+}
+.dash{
+    text-align: center
+}
+.price{
+    text-align: right;
+    width: 25%;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+}
+hr {
+    height: 2px;
+    background-color: rgb(10, 1, 18);
+}
+#subscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    bottom: 0px;
+  }
+  form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: rgb(239, 142, 214) ;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+#submit:hover{
+    background-color: rgb(245, 168, 212);
+}
+.botton{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+input[placeholder]{
+    font-family: "Quicksand", sans-serif;
+}
+.footer-list{
+    list-style: none;
+    text-align: right;
+    margin-right: 50px;
+    padding: 0;
+   display: flex;
+   justify-content: flex-end;
+   cursor: pointer;
+   }
+footer{
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(239, 142, 214);
+    bottom: 0;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.footer-list li{
+    margin-left: 20px;
+    display: inline;
+}
+.topic{
+    font-family:'Quicksand', sans-serif;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.note{
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+}
+/*Hamburger Menu Style */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(215, 210, 213);
+        opacity: 0.8;
+        width: 40%;
+        height: 40%;
+        justify-content: left;
+        align-items: left;
+        display: none;
+    }
+    .nav-links li {
+        margin: 20px 0;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+        color: rgb(24, 22, 22);
+    }
+    #subscribe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100%;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-family: "Quicksand", sans-serif;
+        color: black;
+        bottom: 0px;
+        margin-right: 30px;
+        margin-left: 30px;
+      }
+}

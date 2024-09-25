@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:default
+}
+html{
+    display: block;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+#page-wrapper{
+    position: relative;
+}
+.logo{
+    font-weight: bold;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.brand{
+    font-family:"Bona Nova SC", serif;
+    cursor: pointer;
+}
+.second{
+    font-family:"Playwrite CU", cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+#nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+.nav-links a{
+    text-decoration: none;
+    font-size: 1em;
+}
+.nav-item{
+    padding: 12px;
+    cursor: pointer;
+}
+.nav-item:hover{
+  background-color: rgb(109, 160, 196);
+  border-radius: 5px;
+  transition: color 1s ease
+}
+.nav-links li{
+    margin-left: 20px;
+}
+#header {
+    position: flex;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+body{
+    background-color: rgb(194, 226, 244);
+}
+#title{
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#subtitle{
+    font-family: "Bona Nova SC", serif;
+    text-align: center;
+}
+.form-background{
+    width:80%;
+    margin-right: auto;
+    margin-left: auto; 
+    padding: 20px;
+    background-color: rgb(109, 160, 196);
+    text-align:center;
+    height: 700px;
+ }
+ input[type='submit'] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: rgb(27, 26, 28) ;
+    cursor: pointer;
+}
+.submit{
+    text-align: center;
+}
+#submit:hover{
+    background-color: rgb(194, 226, 244);
+}
+.botton{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+input[placeholder]{
+    font-family: "Quicksand", sans-serif;
+}
+input[type="date"], input[type="time"], select, input[type="tel"],input[type="text"]{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Merriweather", serif;
+    font-size: larger;
+}
+.thanks{
+    font-family:"Exo 2", sans-serif;;
+}
+.footer-list{
+    list-style: none;
+    text-align: right;
+    margin-right: 50px;
+    padding: 0;
+   display: flex;
+   justify-content: flex-end;
+   cursor: pointer;
+   }
+footer{
+    position: flex;
+    padding: 2px 2px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(109, 160, 196);
+    margin-bottom: 0;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.footer-list li{
+    margin-left: 20px;
+    display: inline;
+}
+/* Hamburger Menu Style */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* Responsive for mobile screens */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(215, 210, 213);
+        opacity: 0.8;
+        width: 40%;
+        height: 40%;
+        justify-content: left;
+        align-items: left;
+        display: none;
+    }
+    .nav-links li {
+        margin: 20px 0;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+        color: rgb(24, 22, 22);
+    }
+}

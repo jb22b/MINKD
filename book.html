@@ -1,0 +1,76 @@
+<!--home.html-->
+<!--pierced.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Mink'd by Ann</title>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <header id="header">
+              <div class="logo">
+                <p class="brand">MINK'D/PIERCED <span class="second">by Ann</span></p>
+              </div>
+              <nav id="nav-bar">
+                <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Hamburger Icon -->
+                <ul class="nav-links" id="navlinks">
+                    <li><a class="nav-item" href="home.html">MINK'D BY ANN</a></li>
+                    <li><a class="nav-item" href="pierced.html">PIERCED BY ANN</a></li>
+                    <li><a class="nav-item" href="book.html">BOOK AN APPOINTMENT</a></li>
+                </ul>
+            </nav>
+            </header>
+            <div class="container">
+                <section id="hero">
+                    <div class="hero-text">
+                    <h1 id="title">BOOK AN APPOINTMENT</h1>
+                </div>
+                <div class="hero-text">
+                    <p id="subtitle"> Fill this form to Book an Appointment</p>
+                </div>
+                </section>
+                <div class="form-background">
+                   <form action="https://formspree.io/f/xgvwobwj" id="appointment" method="post">
+                        <label for="Name" id="name-label">Name:  </label><input id="name" type="text" name="Name" placeholder="Enter your name" required/>
+                        <label for="Phone" id="number-lable">Phone No/ WhatsApp No: </label><input id="number" type="tel" name="Phone" placeholder="0554637456" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required/>
+                        <label for="Service" id="service-label">Service:  </label>
+                        <select id="dropdown" name="Service">
+                            <option value="">Select an option</option>
+                            <option value="Lash Extentions">Lash Extentions</option>
+                            <option value="Removal">Removal</option>
+                            <option value="Refill">Refill</option>
+                            <option value="Piercing">Piercing</option>
+                        </select>
+                        <label for="Date" id="date-label">Preferred Date:  </label>
+                        <input type="date" id="date" name="Date" required>
+                        <label for="Time">Preferred Time:</label>
+                        <input type="time" id="time" name="Time" required>
+                        <div class="submit">
+                        <input type="submit" class="botton" id="submit" value="SUBMIT FORM">
+                        </div>
+                   </form>
+                   <p class="NB">NB: *A text will be sent to your phone number via WhatsApp to confirm appointment</p>
+                   <p class="thanks">THANK YOU FOR CHOOSING US &#127989;</p>
+            </div>
+        </div>
+        <footer>
+            <ul class="footer-list">
+                <li><a href="https://www.instagram.com/minkdbyann" target="_blank" class="icon">
+                    <i class="fab fa-instagram"></i> <span class="color">Follow Us</span></a></li>
+                <li><a href="tel:+233541896517" class="call-link" id="footer-link"><span class="color">&#128383; Call Us</span></a></li>
+            </ul>
+        </footer>
+        <script src="minkd.js"></script>
+    </body>   
+</html>    
