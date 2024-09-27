@@ -37,7 +37,7 @@ div {
 .motto {
     font-family: "Quicksand", sans-serif;
     text-align: center;
-    background-color: rgb(152, 125, 176);
+    background-color: rgb(158, 76, 160);
     cursor: pointer;
     color: white;
 }
@@ -87,7 +87,7 @@ div {
     width: 100%;
 }
 body{
-    background-color: rgb(194, 183, 205);
+    background-color: rgba(234, 172, 237, 0.913);
     min-height: 100vh;
 }
 html, body {
@@ -111,7 +111,7 @@ main {
     margin-right: auto;
     margin-left: auto; 
     padding: 20px;
-    background-color: rgb(152, 125, 176);
+    background-color: rgb(158, 76, 160);
     color: white;
     text-align:center;
     display: relative;
@@ -173,12 +173,12 @@ input[type='submit'] {
     height: 30px;
     margin: 15px 0;
     border: 0;
-    background-color: rgb(152, 125, 176) ;
+    background-color: rgb(158, 76, 160);
     cursor: pointer;
     margin-bottom: 50px;
 }
 #submit:hover{
-    background-color: rgb(245, 168, 212);
+    background-color: rgba(234, 172, 237, 0.913);
 }
 .botton{
     color: white;
@@ -199,7 +199,7 @@ input[placeholder]{
 footer{
     justify-content: space-between;
     width: 100%;
-    background-color: rgb(152, 125, 176);
+    background-color:rgb(158, 76, 160);
     bottom: 0;
     position: relative;
     padding-bottom: 10px;
@@ -259,4 +259,9 @@ footer{
         margin-right: 30px;
         margin-left: 30px;
       }
+      .nav-item:hover{
+        background-color: rgba(234, 172, 237, 0.913);
+        transition: color 1s ease;
+        color: white;
+    }
 }
