@@ -55,7 +55,7 @@ div {
     cursor: pointer;
 }
 .nav-item:hover{
-  background-color: rgb(109, 160, 196);
+  background-color: rgba(234, 172, 237, 0.913);
   border-radius: 5px;
   transition: color 1s ease
 }
@@ -71,7 +71,7 @@ div {
     width: 100%;
 }
 body{
-    background-color: rgb(194, 226, 244);
+    background-color: rgba(234, 172, 237, 0.913);
 }
 #title{
     font-family: "Bona Nova SC", serif;
@@ -88,7 +88,7 @@ body{
     margin-right: auto;
     margin-left: auto; 
     padding: 20px;
-    background-color: rgb(109, 160, 196);
+    background-color: rgb(158, 76, 160);
     text-align:center;
     height: 700px;
  }
@@ -105,7 +105,7 @@ body{
     text-align: center;
 }
 #submit:hover{
-    background-color: rgb(194, 226, 244);
+    background-color: rgba(234, 172, 237, 0.913);
 }
 .botton{
     color: white;
@@ -146,7 +146,7 @@ footer{
     padding: 2px 2px;
     justify-content: space-between;
     width: 100%;
-    background-color: rgb(109, 160, 196);
+    background-color: rgb(158, 76, 160);
     margin-bottom: 0;
     margin-top: 30px;
     padding-bottom: 10px;
@@ -186,5 +186,10 @@ footer{
     .menu-icon {
         display: block;
         color: rgb(24, 22, 22);
+    }
+    .nav-item:hover{
+        background-color: rgba(234, 172, 237, 0.913);
+        transition: color 1s ease;
+        color: white;
     }
 }
